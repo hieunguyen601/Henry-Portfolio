@@ -1,3 +1,9 @@
+const getBasePath = () => {
+  return typeof window !== 'undefined'
+    ? window.__NEXT_DATA__.assetPrefix || ''
+    : '';
+};
+
 export const projects = [
   {
     title: 'Nie Tattoo Studio Website',
